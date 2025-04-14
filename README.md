@@ -114,3 +114,8 @@ npm run migrations:generate
 ```bash
 npm run migrations:run
 ```
+
+- **Actualizar las migraciones**
+```bash
+npm run migrations:run -- change-{nombre_entidad}
+```
