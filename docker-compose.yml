@@ -1,0 +1,17 @@
+services:
+  database:
+    image: postgres
+    container_name: postgres_orm
+    restart: always
+    environment:
+      - POSTGRES_DB=my_db
+      - POSTGRES_USER=wagustin
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - /postgres_data:/var/lib/postgresql
+
+volumes:
+  postgresql-volume:
+    external: true
