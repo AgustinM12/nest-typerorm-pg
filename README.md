@@ -107,7 +107,7 @@ docker-compose up -d database
 
 - **Generar la migracion**
 ```bash
-npm run migrations:generate
+npm run migrations:generate -- src/migrations/nombre_actualizacion
 ```
 
 - **Usar la migracion**
@@ -117,5 +117,5 @@ npm run migrations:run
 
 - **Actualizar las migraciones**
 ```bash
-npm run migrations:run -- change-{nombre_entidad}
+npm run migrations:run
 ```
