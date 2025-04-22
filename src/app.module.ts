@@ -4,21 +4,23 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TaskModule } from './task/task.module';
 import { FilesModule } from './files/files.module';
+import { XslxModule } from './xslx/xslx.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: "postgres",
-      host: "localhost",
-      port: 5432,
-      username: "wagustin",
-      password: "postgres",
-      database: "my_db",
-      entities: ['dist/**/*.entity{.ts,.js}'],
-      synchronize: false,
-    }),
-    TaskModule,
-    FilesModule
+    // TypeOrmModule.forRoot({
+    //   type: "postgres",
+    //   host: "localhost",
+    //   port: 5432,
+    //   username: "wagustin",
+    //   password: "postgres",
+    //   database: "my_db",
+    //   entities: ['dist/**/*.entity{.ts,.js}'],
+    //   synchronize: false,
+    // }),
+    // TaskModule,
+    // FilesModule,
+    XslxModule
   ],
   controllers: [AppController],
   providers: [AppService],

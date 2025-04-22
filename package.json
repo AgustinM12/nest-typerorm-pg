@@ -33,9 +33,11 @@
     "pg": "^8.14.1",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
-    "typeorm": "^0.3.22"
+    "typeorm": "^0.3.22",
+    "xlsx-populate": "^1.21.0"
   },
   "devDependencies": {
+    "@types/xlsx-populate": "git+https://github.com/JanLoebel/types-xlsx-populate.git",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
